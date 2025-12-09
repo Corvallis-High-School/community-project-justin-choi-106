@@ -21,7 +21,7 @@ private  ArrayList<String> membersName = new ArrayList<String>();
     }
     // 3. Write a print() method that uses System.out.println to print out all the instance variables.
     public  void print() {
-      System.out.println( hours + " hours of pratice a week and team number is:" + teamNum);
+      System.out.println( hours + " hours of pratice a week and team number is:" + teamNum +  " and the members' names are: ");
         for (String name : membersName) {
       System.out.println(name);
       }
@@ -61,7 +61,7 @@ private  ArrayList<String> membersName = new ArrayList<String>();
       @Override
     public String toString() {
            return  
-               teamNum + hours +
+               teamNum + " " + hours +
                      " " +  membersName;
 //                System.out.print(" " + membersName);
 //                }
@@ -70,8 +70,9 @@ private  ArrayList<String> membersName = new ArrayList<String>();
     // For example, there could be a print method with arguments that indicate how you want to print out
     // the information, e.g. print(format) could print the data according to an argument that is "plain"
     // or "table" where the data is printed in a table drawn with dashes and lines (|).
- public void setTeamNum(int teamNumSet) {
-        teamNum = teamNumSet;
+ public void printWEventsWon(int eventWonInAYear) {
+       print();
+        System.out.println(" and has won " + eventWonInAYear + " in this year");
       }
     
     // 8. Write a main method that constructs at least 2 objects of your class
